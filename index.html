@@ -1,21 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Odin Admin Dashboard</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        <div class="sidebar"></div>
-        <div class="header"></div>
+        <div class="sidebar">
+            <div class="dashboard hoverable">
+                <img src="images/view-dashboard.svg">
+                <h1>Dashboard</h1>
+            </div>
+            <div class="navigation-menu">
+                <div class="navigation-item hoverable">
+                    <img src="images/home.svg" alt="">
+                    <h2>Home</h2>
+                </div>
+                <div class="navigation-item hoverable">
+                    <img src="images/card-account-details.svg" alt="">
+                    <h2>Profiles</h2>
+                </div>
+                <div class="navigation-item hoverable">
+                    <img src="images/android-messages.svg" alt="">
+                    <h2>Messages</h2>
+                </div>
+                <div class="navigation-item hoverable">
+                    <img src="images/clock-time-three.svg" alt="">
+                    <h2>History</h2>
+                </div>
+                <div class="navigation-item hoverable">
+                    <img src="images/note-multiple.svg" alt="">
+                    <h2>Tasks</h2>
+                </div>
+                <div class="navigation-item hoverable">
+                    <img src="images/account-group.svg" alt="">
+                    <h2>Communities</h2>
+                </div>
+                <div class="navigation-item hoverable">
+                    <img src="images/cog.svg" alt="">
+                    <h2>Settings</h2>
+                </div>
+                <div class="navigation-item hoverable">
+                    <img src="images/message-question.svg" alt="">
+                    <h2>Support</h2>
+                </div>
+                <div class="navigation-item hoverable">
+                    <img src="images/shield-check.svg" alt="">
+                    <h2>Privacy</h2>
+                </div>
+            </div>
+                
+        </div>
+        <div class="header">
+            <div class="header-top">
+                <div class="search-bar">
+                    <img class="hoverable" src="images/magnify.svg" alt="magnifying glass">
+                    <input type="text" name="" id="">
+                </div>
+                <div class="profile-bar">
+                    <img class="hoverable" src="images/bell-ring-outline.svg" alt="ringing bell">
+                    <div class="avatar"></div>
+                    <h2>Shamik Rahman</h2>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="user-greeting">
+                    <div class="avatar"></div>
+
+                    <div class="greeting-name">
+                        <div class="greeting">Hi there,</div>
+                        <h1 class="name">Shamik Rahman (@shamik)</h1>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="hoverable">New</button>
+                    <button class="hoverable">Upload</button>
+                    <button class="hoverable">Share</button>
+                </div>
+            </div>
+        </div>
         <div class="main">
-            <div class="projects"></div>
+            <div class="projects">
+                <h2>Your Projects</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Super Cool Project</h3>
+                        <p></p>
+                        <div class="icons"><img src="" alt=""><img src="" alt=""><img src="" alt=""></div>
+                    </div>
+                    <div class="card">
+                        <h3>Super Cool Project</h3>
+                        <p></p>
+                        <div class="icons"><img src="" alt=""><img src="" alt=""><img src="" alt=""></div>
+                    </div>
+                    <div class="card">
+                        <h3>Super Cool Project</h3>
+                        <p></p>
+                        <div class="icons"><img src="" alt=""><img src="" alt=""><img src="" alt=""></div>
+                    </div>
+                    <div class="card">
+                        <h3>Super Cool Project</h3>
+                        <p></p>
+                        <div class="icons"><img src="" alt=""><img src="" alt=""><img src="" alt=""></div>
+                    </div>
+                    <div class="card">
+                        <h3>Super Cool Project</h3>
+                        <p></p>
+                        <div class="icons"><img src="" alt=""><img src="" alt=""><img src="" alt=""></div>
+                    </div>
+                    <div class="card">
+                        <h3>Super Cool Project</h3>
+                        <p></p>
+                        <div class="icons"><img src="" alt=""><img src="" alt=""><img src="" alt=""></div>
+                    </div>
+                </div>
+            </div>
             <div class="announcements"></div>
-            <div class="trending"></div>
+            <div class="trending">
+            </div>
         </div>
     </div>
 </body>
+
 </html>
