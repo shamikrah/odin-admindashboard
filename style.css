@@ -1,4 +1,5 @@
 :root {
+    box-sizing: border-box;
     --theme-blue: #1a92d4;
     --theme-yellow: #f0b429;
     --theme-grey: #e2e8f0;
@@ -12,6 +13,7 @@
     grid-template-rows: 1fr 4fr;
     height: 100vh;
     width: 100vw;
+    overflow-x: scroll;
 }
 
 .hoverable:hover {
@@ -23,6 +25,7 @@
 
 .sidebar {
     display: grid;
+    box-sizing: border-box;
     grid-template-rows: 1fr 9fr;
     background-color: var(--theme-blue);
     grid-row: 1 / 3;
@@ -83,7 +86,7 @@
     grid-template-rows: 1fr 2fr;
     background-color: white;
     padding: 0 2rem;
-    box-shadow: 0 8px 20px -20px black;
+    box-shadow: 0 2px 3px black;
 }
 
 .header-top {
@@ -176,4 +179,124 @@ button {
 
 .main {
     background-color: var(--theme-grey);
+    display: grid; 
+    grid-template-columns: 3fr 1fr;
+    padding: 1.5rem 1rem;
+}
+
+.main h2 {
+    font-weight: 450;
+}
+
+.projects > h2,
+.announcements > h2,
+.trending > h2 {
+    padding-bottom: 0.9rem;
+}
+
+.projects {
+    grid-row: 1 / 3;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.cards > .card {
+    display: grid;
+    grid-template-rows: 0.4fr 1.6fr 1fr;
+    grid-template-columns: 1fr 0.8fr;
+    background-color: white;
+    border-radius: 0.4rem;
+    width: 18rem;
+    height: 10rem;
+    padding: 1rem;
+    gap: 0.2rem;
+}
+
+.cards > .card > h3 {
+    font-weight: 450;
+}
+
+.cards > .card > p {
+    color: grey;
+    font-size: 0.8rem;
+    grid-column: 1 / 3;
+}
+
+.icons {
+    display: grid;
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: end;
+    align-items: end;
+}
+
+.icons > img {
+    width: 1.2rem;
+}
+
+.announcements > .card {
+    display: grid;
+    background-color: white;
+    border-radius: 0.4rem;
+    padding: 1.6rem;
+}
+
+.announcements > .card > h4 {
+    font-weight: 450;
+    font-size: 0.8rem;
+}
+
+.announcements > .card > p {
+    font-size: 0.7rem;
+    color: grey;
+}
+
+hr {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.trending {
+    grid-column: 2 / 3;
+    align-self: end;
+}
+
+.trending > .card {
+    display: grid;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 0.4rem;
+    padding: 1.6rem;
+}
+
+.trending-item {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.trending-item > .avatar {
+    background: var(--avatar) center center / cover no-repeat;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+.user-project p {
+    font-size: 0.8rem;
+}
+
+.user-project > p:nth-child(2) {
+    color: gray;
+} 
+
+.user-project {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
 }
